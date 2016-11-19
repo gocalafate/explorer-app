@@ -57,16 +57,16 @@
 						<span class="icon-bar agileits w3layouts"></span>
 						<span class="icon-bar agileits w3layouts"></span>
 					</button>
-					<a class="navbar-brand agileits w3layouts" href="index.html">GoCalafate</a>
+					<a class="navbar-brand agileits w3layouts">GoCalafate</a>
 				</div>
 
 				<div id="navbar" class="navbar-collapse agileits w3layouts navbar-right collapse">
 					<ul class="nav agileits w3layouts navbar-nav">
-						<li class="agileits w3layouts"><a href="#about">ABOUT</a></li>
-						<li class="agileits w3layouts"><a href="#services">SERVICES</a></li>
-						<li class="agileits w3layouts"><a href="#stats">STATS</a></li>
+						<li class="agileits w3layouts"><a href="#about"><%=texts.MENU_ABOUT%></a></li>
+						<li class="agileits w3layouts"><a href="#services"><%=texts.MENU_SERVICES%></a></li>
+						<li class="agileits w3layouts"><a href="#stats"><%=texts.MENU_STATS%></a></li>
 						<li class="agileits w3layouts"><a href="#portfolio">PORTFOLIO</a></li>
-						<li class="agileits w3layouts"><a href="#contact">CONTACT</a></li>
+						<li class="agileits w3layouts"><a href="#contact"><%=texts.MENU_CONTACT%></a></li>
 					</ul>
 				</div>
 
@@ -103,18 +103,18 @@
 						<h3>Get Discount on Travel Expenses</h3>
 					</div>
 				</li>
-				<li>
+				<!--li>
 					<img src="images/slide-5.jpg" alt="Explorer">
 					<div class="layer agileits w3layouts">
 						<h3>Login for More</h3>
 						<button class="btn agileits w3layouts btn-primary" data-toggle="modal" data-target="#myModal">LOGIN</button>
 					</div>
-				</li>
+				</li-->
 			</ul>
 
 
 			<!-- Modal -->
-			<div class="tooltip-content agileits w3layouts">
+			<!--div class="tooltip-content agileits w3layouts">
 
 				<div class="modal fade agileits w3layouts features-modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
 					<div class="modal-dialog agileits w3layouts modal-lg">
@@ -170,7 +170,7 @@
 					</div>
 				</div>
 
-			</div>
+			</div-->
 			<!-- //Modal -->
 
 		</div>
@@ -184,7 +184,7 @@
 	<!-- About -->
 	<div class="about agileits w3layouts" id="about">
 		<div class="col-md-6 col-sm-6 agileits w3layouts about-grid about-grid-1">
-			<h1 class="agileits w3layouts">About Us</h1>
+			<h1 class="agileits w3layouts"><%=texts.LABEL_ABOUT_US%></h1>
 			<h4 class="agileits w3layouts">No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</h4>
 			<p class="agileits w3layouts">Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. Lets take a trivial example, which of us ever undertakes laborious physical exercise.</p>
 		</div>
@@ -429,15 +429,15 @@
 	<div class="contact agileits w3layouts" id="contact">
 		<div class="container">
 
-			<h3 class="agileits w3layouts">Contact Us</h3>
+			<h3 class="agileits w3layouts"><%=texts.LABEL_CONTACT_US%></h3>
 
 			<div class="contact-grid agileits w3layouts">
 				<form action="#" method="post">
-					<input type="text" class="text agileits w3layouts" name="Name" placeholder="YOUR NAME" required="">
-					<input type="text" class="text agileits w3layouts email" name="Email" placeholder="YOUR EMAIL" required="">
-					<input type="text" class="text agileits w3layouts" name="Phone" placeholder="YOUR PHONE" required="">
-					<textarea name="Message" placeholder="MESSAGE" required=""></textarea>
-					<input type="submit" class="more_btn agileits w3layouts" value="SEND MESSAGE">
+					<input type="text" class="text agileits w3layouts" name="name" placeholder="<%=texts.CONTACT_FORM_NAME%>" required="">
+					<input type="text" class="text agileits w3layouts email" name="email" placeholder="<%=texts.CONTACT_FORM_EMAIL%>" required="">
+					<input type="text" class="text agileits w3layouts" name="phone" placeholder="<%=texts.CONTACT_FORM_PHONE%>" required="">
+					<textarea name="contact_msg" placeholder="<%=texts.CONTACT_FORM_MSG%>" required=""></textarea>
+					<input type="submit" class="more_btn agileits w3layouts" value="<%=texts.CONTACT_FORM_SEND%>">
 				</form>
 			</div>
 
